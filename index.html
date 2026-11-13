@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Caleb Ngugi Mburu — IT student, aspiring software developer, writer & entrepreneur based in Kenya. Building ideas into digital experiences." />
+  <meta name="keywords" content="Caleb Ngugi Mburu, software developer, Flutter, JavaScript, portfolio, Kenya, web developer, AI" />
+  <meta name="author" content="Caleb Ngugi Mburu" />
+  <meta property="og:title" content="Caleb Ngugi Mburu | Developer Portfolio" />
+  <meta property="og:description" content="IT student, aspiring software developer, writer and entrepreneur. Building ideas into digital experiences." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://calebngugi.com" />
+  <meta property="og:image" content="assets/images/portrait.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Caleb Ngugi Mburu | Developer Portfolio" />
+  <meta name="twitter:description" content="Building Ideas Into Digital Experiences." />
+  <title>Caleb Ngugi Mburu | Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="assets/images/cn-logo.png" />
+  <link rel="apple-touch-icon" href="assets/images/cn-logo.png" />
+</head>
+<body>
+  <!-- Animated polygon / mesh background -->
+  <div id="particles-js" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">
+        <img src="assets/images/cn-logo.png" alt="CN" class="nav__logo-img" width="40" height="40" />
+        <span class="nav__logo-text">Caleb<span class="dot">.</span></span>
+      </a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <div class="nav__close" id="nav-close" aria-label="Close menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </div>
+      </div>
+      <button type="button" class="dark-mode-btn" id="dark-mode-btn" aria-label="Toggle dark mode" title="Toggle dark / light mode">
+        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      </button>
+      <div class="nav__toggle" id="nav-toggle" aria-label="Open menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero section" id="home">
+      <div class="hero__container container">
+        <div class="hero__content">
+          <p class="hero__greeting reveal">Hi, I'm</p>
+          <h1 class="hero__name reveal">Caleb Ngugi Mburu</h1>
+          <h2 class="hero__headline reveal">
+            <span class="typed-text"></span><span class="cursor">|</span>
+          </h2>
+          <p class="hero__intro reveal">
+            I'm an IT student, aspiring software developer, and creative problem-solver passionate about technology, software development, artificial intelligence, and building useful digital products.
+          </p>
+          <div class="hero__buttons reveal">
+            <a href="#projects" class="btn btn--primary">View My Projects</a>
+            <a href="#contact" class="btn btn--outline">Contact Me</a>
+          </div>
+          <div class="hero__social reveal">
+            <a href="https://github.com/celeb428" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero__image-wrapper reveal">
+          <div class="hero__image-frame">
+            <img src="assets/images/portrait.png" alt="Caleb Ngugi Mburu" class="hero__image" width="400" height="500" />
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll">
+        <a href="#about" aria-label="Scroll to About">
+          <span></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about section" id="about">
+      <div class="container">
+        <h2 class="section__title reveal">About Me</h2>
+        <div class="about__content">
+          <div class="about__text reveal">
+            <p>
+              I am a second-year Information Technology student developing my skills in programming, software development, web technologies, and artificial intelligence. I enjoy learning by building real projects, experimenting with new tools, solving technical problems, and turning ideas into practical digital solutions.
+            </p>
+            <p>
+              I am also interested in entrepreneurship, writing, and using technology to solve everyday problems. My journey is about continuous learning — building, writing, and creating useful digital products one step at a time.
+            </p>
+          </div>
+          <div class="about__highlights reveal">
+            <div class="highlight-card">
+              <span class="highlight-card__icon">🎓</span>
+              <h3>IT Student</h3>
+              <p>Second-year Information Technology</p>
+            </div>
+            <div class="highlight-card">
+              <span class="highlight-card__icon">💻</span>
+              <h3>Aspiring Developer</h3>
+              <p>Software, web & mobile</p>
+            </div>
+            <div class="highlight-card">
+              <span class="highlight-card__icon">✍️</span>
+              <h3>Writer</h3>
+              <p>Reflections & tech journey</p>
+            </div>
+            <div class="highlight-card">
+              <span class="highlight-card__icon">🚀</span>
+              <h3>Entrepreneur</h3>
+              <p>Building useful products</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <h2 class="section__title reveal">My Projects</h2>
+        <p class="section__subtitle reveal">Real builds, concepts, and ongoing experiments — clearly labelled by status.</p>
+
+        <div class="projects__filters reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="completed">Completed</button>
+          <button class="filter-btn" data-filter="in-progress">In Progress</button>
+          <button class="filter-btn" data-filter="concept">Concept</button>
+          <button class="filter-btn" data-filter="proposal">Proposal</button>
+        </div>
+
+        <div class="projects__grid">
+          <!-- Binax -->
+          <article class="project-card reveal" data-category="completed">
+            <div class="project-card__status status--completed">Completed</div>
+            <div class="project-card__content">
+              <h3 class="project-card__title">Binax</h3>
+              <p class="project-card__type">Number System Converter</p>
+              <p class="project-card__desc">A Flutter and Dart application for converting between different number systems. Built as a practical learning project in mobile development.</p>
+              <div class="project-card__tech">
+                <span>Flutter</span>
+                <span>Dart</span>
+              </div>
+              <div class="project-card__links">
+                <a href="https://github.com/celeb428/binax" target="_blank" rel="noopener noreferrer" class="btn btn--sm">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Javis AI -->
+          <article class="project-card reveal" data-category="in-progress">
+            <div class="project-card__status status--progress">In Progress</div>
+            <div class="project-card__content">
+              <h3 class="project-card__title">Javis AI</h3>
+              <p class="project-card__type">Telegram Assistant</p>
+              <p class="project-card__desc">An ongoing Node.js project integrating Telegram with AI services to support studying, coding, and everyday questions.</p>
+              <div class="project-card__tech">
+                <span>Node.js</span>
+                <span>Telegram Bot</span>
+                <span>AI APIs</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Zeni Loan -->
+          <article class="project-card reveal" data-category="concept">
+            <div class="project-card__status status--concept">Concept Stage</div>
+            <div class="project-card__content">
+              <h3 class="project-card__title">Zeni Loan</h3>
+              <p class="project-card__type">Lending Platform Concept</p>
+              <p class="project-card__desc">A planned digital lending application featuring borrower onboarding, identity and payslip checks, loan limits, and an administrative review workflow.</p>
+              <div class="project-card__tech">
+                <span>Concept</span>
+                <span>Fintech</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Magomano Academy -->
+          <article class="project-card reveal" data-category="proposal">
+            <div class="project-card__status status--proposal">Proposal</div>
+            <div class="project-card__content">
+              <h3 class="project-card__title">Magomano Presbyterian Academy</h3>
+              <p class="project-card__type">School Website</p>
+              <p class="project-card__desc">A school website proposal focused on providing a professional online presence for the institution.</p>
+              <div class="project-card__tech">
+                <span>Web Design</span>
+                <span>HTML/CSS</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Digital Drip -->
+          <article class="project-card reveal" data-category="completed">
+            <div class="project-card__status status--completed">Completed</div>
+            <div class="project-card__content">
+              <h3 class="project-card__title">Digital Drip</h3>
+              <p class="project-card__type">Print-on-Demand Website</p>
+              <p class="project-card__desc">A website project for a print-on-demand business, focused on clean presentation and product showcase.</p>
+              <div class="project-card__tech">
+                <span>Web Development</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Personal Portfolio -->
+          <article class="project-card reveal" data-category="completed">
+            <div class="project-card__status status--completed">Completed</div>
+            <div class="project-card__content">
+              <h3 class="project-card__title">Personal Portfolio</h3>
+              <p class="project-card__type">This Site</p>
+              <p class="project-card__desc">My personal website showcasing projects and development journey. Continuously evolving as I learn and build.</p>
+              <div class="project-card__tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <h2 class="section__title reveal">Skills I'm Developing</h2>
+        <p class="section__subtitle reveal">Honest representation of where I am in my learning journey.</p>
+
+        <div class="skills__grid">
+          <div class="skill-category reveal">
+            <h3 class="skill-category__title">Programming</h3>
+            <ul class="skill-list">
+              <li><span class="skill-name">Dart</span><div class="skill-bar"><div class="skill-bar__fill" style="--level: 70%"></div></div></li>
+              <li><span class="skill-name">JavaScript</span><div class="skill-bar"><div class="skill-bar__fill" style="--level: 65%"></div></div></li>
+              <li><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-bar__fill" style="--level: 55%"></div></div></li>
+              <li><span class="skill-name">C</span><div class="skill-bar"><div class="skill-bar__fill" style="--level: 45%"></div></div></li>
+              <li><span class="skill-name">Java</span><div class="skill-bar"><div class="skill-bar__fill" style="--level: 40%"></div></div></li>
+            </ul>
+          </div>
+
+          <div class="skill-category reveal">
+            <h3 class="skill-category__title">App & Web Development</h3>
+            <ul class="skill-list">
+              <li><span class="skill-name">Flutter</span><div class="skill-bar"><div class="skill-bar__fill" style="--level: 70%"></div></div></li>
+              <li><span class="skill-name">HTML / CSS</span><div class="skill-bar"><div class="skill-bar__fill" style="--level: 75%"></div></div></li>
+              <li><span class="skill-name">JavaScript (Web)</span><div class="skill-bar"><div class="skill-bar__fill" style="--level: 60%"></div></div></li>
+            </ul>
+          </div>
+
+          <div class="skill-category reveal">
+            <h3 class="skill-category__title">Backend & Tools</h3>
+            <ul class="skill-list">
+              <li><span class="skill-name">Node.js</span><div class="skill-bar"><div class="skill-bar__fill" style="--level: 55%"></div></div></li>
+              <li><span class="skill-name">Git & GitHub</span><div class="skill-bar"><div class="skill-bar__fill" style="--level: 70%"></div></div></li>
+              <li><span class="skill-name">PostgreSQL</span><div class="skill-bar"><div class="skill-bar__fill" style="--level: 40%"></div></div></li>
+              <li><span class="skill-name">REST APIs</span><div class="skill-bar"><div class="skill-bar__fill" style="--level: 50%"></div></div></li>
+            </ul>
+          </div>
+
+          <div class="skill-category reveal">
+            <h3 class="skill-category__title">Other Skills</h3>
+            <ul class="skill-list skill-list--tags">
+              <li>AI APIs & Telegram bots</li>
+              <li>Technical writing</li>
+              <li>Problem-solving</li>
+              <li>UI/UX fundamentals</li>
+              <li>Research</li>
+              <li>Continuous learning</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <h2 class="section__title reveal">Get In Touch</h2>
+        <p class="section__subtitle reveal">Have a question, idea, or just want to say hello? I'd love to hear from you.</p>
+
+        <div class="contact__grid">
+          <div class="contact__info reveal">
+            <div class="contact__item">
+              <span class="contact__label">Email</span>
+              <a href="mailto:ngugi4046@gmail.com" class="contact__value">ngugi4046@gmail.com</a>
+            </div>
+            <div class="contact__item">
+              <span class="contact__label">WhatsApp</span>
+              <a href="https://wa.me/254703686856" class="contact__value" target="_blank" rel="noopener noreferrer">+254 703 686 856</a>
+            </div>
+            <div class="contact__item">
+              <span class="contact__label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/caleb-ngugi-4856a8373" class="contact__value" target="_blank" rel="noopener noreferrer">caleb-ngugi-4856a8373</a>
+            </div>
+            <div class="contact__item">
+              <span class="contact__label">GitHub</span>
+              <a href="https://github.com/celeb428" target="_blank" rel="noopener noreferrer" class="contact__value">github.com/celeb428</a>
+            </div>
+            <div class="contact__social">
+              <a href="https://github.com/celeb428" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/caleb-ngugi-4856a8373" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.5h4.5V24H.24V8.5zM8.2 8.5h4.3v2.16h.06c.6-1.12 2.06-2.3 4.24-2.3 4.54 0 5.38 2.99 5.38 6.88V24h-4.5v-7.03c0-1.68-.03-3.84-2.35-3.84-2.35 0-2.71 1.84-2.71 3.72V24H8.2V8.5z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact__form reveal" id="contact-form" action="https://formspree.io/f/xnpdngkv" method="POST">
+            <input type="hidden" name="_subject" value="Portfolio contact from website" />
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your name" autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="your.email@example.com" autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="What's on your mind?"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full" id="contact-submit">Send Message</button>
+            <p class="form-note" id="form-status">
+              Your message will be sent directly to ngugi4046@gmail.com. I'll reply to your email.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <p class="footer__brand">Caleb Ngugi Mburu</p>
+        <p class="footer__tagline">Building ideas into digital experiences.</p>
+        <div class="footer__links">
+          <a href="https://github.com/celeb428" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/caleb-ngugi-4856a8373" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="mailto:ngugi4046@gmail.com">Email</a>
+        </div>
+      </div>
+      <p class="footer__copy">© 2026 Caleb Ngugi Mburu. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/particles.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
